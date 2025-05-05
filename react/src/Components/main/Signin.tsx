@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useStateContext } from '../context/ContextProvider';
 import './css/authform.css' ;
+import Hero from './Components/main/hero'
 
 const Signin: React.FC = () => {
   const navigate = useNavigate();
@@ -38,7 +39,7 @@ const Signin: React.FC = () => {
         setUser(fakeUser);
         setToken(fakeToken);
         setLoading(false);
-        navigate('/dashboard');
+        navigate('/hero');
       } else {
         setErrors(['Invalid email or password.']);
         setLoading(false);
