@@ -1,0 +1,22 @@
+#guestLayout {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    min-height: 100vh; /* Ensure it takes at least full viewport height */
+    background-color: #1a1a2e; /* Match your dark theme */
+    color: white;
+    padding: 2rem 1rem; /* Add some padding */
+  }
+  
+  #guestLayout main {
+      width: 100%; /* Take full width */
+      max-width: 400px; /* Max width for the form container */
+      background-color: #2a2a3e; /* Card background */
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* More prominent shadow */
+      text-align: center; /* Center text inside the container */
+  }
+  
+  /* Add styles for header/footer within guestLayout if you add them */

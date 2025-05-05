@@ -1,0 +1,31 @@
+.articles-section {
+    padding: 3rem 0; /* Vertical padding */
+    background-color: #1a1a2e; /* Match overall dark background */
+    color: white;
+  }
+  
+  .articles-section .container {
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto; /* Center the container */
+    padding: 0 1rem; /* Horizontal padding */
+  }
+  
+  .articles-section h2 {
+    text-align: center; /* Center the section title */
+    margin-bottom: 2rem; /* Space below the title */
+    font-size: 2rem;
+  }
+  
+  .articles-grid {
+    display: grid;
+    /* Create columns that auto-fill, with a minimum width of 300px */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem; /* Space between grid items (cards) */
+  }
+  
+  /* Basic responsiveness for the grid */
+  @media (max-width: 768px) {
+      .articles-grid {
+          grid-template-columns: 1fr; /* Stack cards in a single column on small screens */
+      }
+  }

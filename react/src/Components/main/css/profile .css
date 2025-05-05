@@ -1,0 +1,99 @@
+.profile-page {
+    padding: 3rem 0;
+    background-color: #1a1a2e; /* Match your dark theme */
+    color: white;
+    min-height: calc(100vh - var(--navbar-height, 0px) - var(--footer-height, 0px)); /* Ensure page takes up at least viewport height minus nav/footer */
+  }
+  
+  .profile-page .container {
+    max-width: 800px; /* Adjust max width as needed */
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .profile-page h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+  
+  .profile-content {
+    display: flex; /* Arrange avatar and details side-by-side */
+    align-items: center; /* Vertically align items */
+    gap: 2rem; /* Space between avatar and details */
+    margin-bottom: 3rem;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  .profile-avatar img {
+    width: 150px; /* Avatar size */
+    height: 150px;
+    border-radius: 50%; /* Circular avatar */
+    object-fit: cover; /* Ensure image covers the circle */
+    border: 4px solid #007bff; /* Border around avatar */
+  }
+  
+  .profile-details {
+    flex-grow: 1; /* Allow details to take remaining space */
+  }
+  
+  .profile-details p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #ccc;
+  }
+  
+  .profile-details strong {
+      color: white; /* Make labels stand out */
+  }
+  
+  
+  .profile-section {
+      background-color: #2a2a3e; /* Background for sections */
+      padding: 2rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-section h3 {
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+      color: #007bff; /* Section heading color */
+  }
+  
+  .profile-section p {
+      margin-bottom: 1rem;
+      color: #ccc;
+  }
+  
+  .profile-section a {
+      color: #007bff; /* Link color */
+      text-decoration: none;
+      transition: text-decoration 0.3s ease;
+  }
+  
+  .profile-section a:hover {
+      text-decoration: underline;
+  }
+  
+  .error-message {
+      color: #ff4d4d; /* Red color for error messages */
+      text-align: center;
+      font-size: 1.2rem;
+  }
+  
+  /* Basic responsiveness for the profile page */
+  @media (max-width: 768px) {
+    .profile-content {
+      flex-direction: column; /* Stack avatar and details vertically */
+      text-align: center; /* Center text */
+    }
+     .profile-avatar {
+         margin-bottom: 1rem; /* Add space below avatar */
+     }
+     .profile-details {
+         width: 100%; /* Make details take full width */
+     }
+  }

@@ -1,0 +1,56 @@
+.hero-section {
+    position: relative; /* Needed for absolute positioning of overlay */
+    width: 100%;
+    height: 500px; /* Adjust height as necessary */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    display: flex; /* Use flexbox to center content */
+    align-items: center;
+    justify-content: center;
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    display: flex; /* Use flexbox to center content inside overlay */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    max-width: 800px; /* Max width for the text content */
+    padding: 0 1rem; /* Horizontal padding */
+  }
+  
+  .hero-tag {
+      background-color: rgba(0, 123, 255, 0.7); /* Background for the tag */
+      color: white;
+      padding: 0.3rem 0.8rem;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      display: inline-block; /* Make tag fit its content */
+  }
+  
+  .hero-content h1 {
+    font-size: 2.8rem; /* Larger font size for the main title */
+    margin-bottom: 1rem;
+    line-height: 1.2; /* Adjust line height */
+  }
+  
+  /* Basic responsiveness for the hero section */
+  @media (max-width: 768px) {
+    .hero-section {
+      height: 350px; /* Smaller height on mobile */
+    }
+  
+    .hero-content h1 {
+      font-size: 2rem; /* Smaller font size on mobile */
+    }
+  }

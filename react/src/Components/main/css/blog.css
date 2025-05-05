@@ -1,0 +1,109 @@
+.blog-page {
+    padding: 3rem 0;
+    background-color: #1a1a2e; /* Match your dark theme */
+    color: white;
+  }
+  
+  .blog-page .container {
+    max-width: 1000px; /* Adjust max width as needed for blog content */
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .blog-page h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+  }
+  
+  .blog-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+    color: #bbb;
+  }
+  
+  /* Styles for the list of blog post items */
+  .blog-posts-list {
+      display: grid; /* Use grid for layout */
+      gap: 2rem; /* Space between blog post items */
+      /* You can adjust the grid columns based on your desired layout */
+      grid-template-columns: 1fr; /* Default to a single column */
+  }
+  
+  .blog-posts-list .blog-post-item {
+      background-color: #2a2a3e; /* Slightly lighter dark background */
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+  }
+  
+  .blog-posts-list .blog-post-item:hover {
+       transform: translateY(-5px); /* Lift item slightly on hover */
+  }
+  
+  
+  .blog-posts-list .blog-post-item h3 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #007bff; /* Highlight blog post title */
+  }
+  
+  .blog-posts-list .blog-post-item .post-meta {
+      font-size: 0.9rem;
+      color: #bbb;
+      margin-bottom: 1rem;
+  }
+  
+  .blog-posts-list .blog-post-item p {
+      margin-bottom: 1rem;
+      color: #ccc;
+  }
+  
+  
+  .blog-posts-list .blog-post-item .read-more {
+      color: #007bff; /* Link color */
+      text-decoration: none;
+      font-weight: bold;
+      transition: text-decoration 0.3s ease;
+  }
+  
+  .blog-posts-list .blog-post-item .read-more:hover {
+      text-decoration: underline;
+  }
+  
+  /* Basic responsiveness for the blog list (if not using ArticlesSection grid) */
+  /* Adjust grid columns if you want multiple columns on larger screens */
+  /*
+  @media (min-width: 768px) {
+      .blog-posts-list {
+          grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); // Example: 2 columns on wider screens
+      }
+  }
+  */
+  
+  
+  /* Example styles for a sidebar (if implemented) */
+  /*
+  .blog-sidebar {
+      margin-top: 3rem; // Space above sidebar if it's below posts on mobile
+  }
+  
+  @media (min-width: 768px) {
+       .contact-content { // Assuming you structure blog with content and sidebar like contact
+          display: flex;
+          gap: 3rem;
+          flex-wrap: wrap;
+       }
+      .blog-posts-list {
+          flex: 2; // Let post list take more space
+          margin-top: 0;
+      }
+      .blog-sidebar {
+          flex: 1; // Let sidebar take less space
+          margin-top: 0;
+      }
+  }
+  */

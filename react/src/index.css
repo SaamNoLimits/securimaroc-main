@@ -1,0 +1,225 @@
+/* === Reset and Base === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f172a;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  /* === Container === */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 0;
+  }
+  
+  /* === Navbar === */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e293b;
+    padding: 1rem 0;
+  }
+  
+  .navbar a {
+    color: #ffffff;
+    margin: 0 1rem;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    color: #38bdf8;
+  }
+  
+  /* === Hero Section === */
+  .hero {
+    position: relative;
+    margin-top: 2rem;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .hero-text {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    background-color: rgba(15, 23, 42, 0.8);
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 600px;
+  }
+  
+  .hero-text h1 {
+    font-size: 1.75rem;
+    color: #ffffff;
+  }
+  
+  .hero-text span {
+    font-size: 0.9rem;
+    color: #94a3b8;
+  }
+  
+  /* === Cards Grid === */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background-color: #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-body h2 {
+    font-size: 1.1rem;
+    color: #e2e8f0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-body span {
+    font-size: 0.8rem;
+    color: #94a3b8;
+  }
+  
+  /* === Footer === */
+  .footer {
+    background-color: #1e293b;
+    padding: 2rem 0;
+    color: #94a3b8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    width: 250px;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-column h4 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-column a {
+    display: block;
+    color: #94a3b8;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+  }
+  
+  .footer-column a:hover {
+    color: #38bdf8;
+  }
+  
+  /* === Newsletter === */
+  .newsletter input {
+    padding: 0.5rem;
+    width: 70%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .newsletter button {
+    padding: 0.5rem 1rem;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  .navbar {
+    background-color: #1a1a2e; /* Dark background color */
+    color: white;
+    padding: 1rem 0; /* Vertical padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional subtle shadow */
+  }
+  
+  .navbar .container {
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto; /* Center the container */
+    display: flex;
+    justify-content: space-between; /* Space out brand and links */
+    align-items: center; /* Vertically align items */
+    padding: 0 1rem; /* Horizontal padding for smaller screens */
+  }
+  
+  .navbar-brand a {
+    color: white;
+    text-decoration: none; /* Remove underline */
+    font-size: 1.5rem; /* Larger font size for brand */
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Arrange links horizontally */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    margin-left: 1.5rem; /* Space between links */
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  .navbar-links a:hover {
+    color: #007bff; /* Highlight color on hover */
+  }
+  
+  /* Basic responsiveness for the navbar */
+  @media (max-width: 768px) {
+    .navbar .container {
+      flex-direction: column; /* Stack items vertically on small screens */
+      text-align: center;
+    }
+  
+    .navbar-brand {
+      margin-bottom: 1rem;
+    }
+  
+    .navbar-links {
+      flex-direction: column; /* Stack links vertically */
+    }
+  
+    .navbar-links li {
+      margin: 0.5rem 0; /* Space between stacked links */
+    }
+  }
+  

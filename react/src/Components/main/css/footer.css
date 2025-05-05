@@ -1,0 +1,112 @@
+.footer {
+    background-color: #111; /* Even darker background for footer */
+    color: #bbb; /* Lighter text color */
+    padding: 3rem 0; /* Vertical padding */
+    font-size: 0.9rem;
+  }
+  
+  .footer .container {
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto; /* Center the container */
+    padding: 0 1rem; /* Horizontal padding */
+  }
+  
+  .footer-columns {
+    display: grid;
+    /* Create columns that auto-fit, with a minimum width of 200px */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem; /* Space between columns */
+    margin-bottom: 2rem; /* Space between columns and bottom section */
+  }
+  
+  .footer-column h4 {
+    color: white; /* White color for headings */
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .footer-column ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 0.6rem; /* Space between list items */
+  }
+  
+  .footer-column ul li a {
+    color: #bbb; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  .footer-column ul li a:hover {
+    color: white; /* Highlight color on hover */
+  }
+  
+  .newsletter-column p {
+      margin-bottom: 1rem;
+      line-height: 1.5;
+  }
+  
+  .newsletter-form {
+      display: flex; /* Arrange input and button horizontally */
+      gap: 0.5rem; /* Space between input and button */
+  }
+  
+  .newsletter-form input[type="email"] {
+      padding: 0.7rem;
+      border: none;
+      border-radius: 5px;
+      flex-grow: 1; /* Allow input to take up available space */
+      background-color: #333; /* Darker input background */
+      color: white;
+  }
+  
+  .newsletter-form input[type="email"]::placeholder {
+      color: #bbb; /* Placeholder color */
+  }
+  
+  
+  .newsletter-form button {
+      padding: 0.7rem 1.5rem;
+      background-color: #007bff; /* Button background color */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+  
+  .newsletter-form button:hover {
+      background-color: #0056b3; /* Darker color on hover */
+  }
+  
+  
+  .footer-bottom {
+    text-align: center; /* Center text in bottom section */
+    padding-top: 1.5rem; /* Space above the line */
+    border-top: 1px solid #333; /* Separating line */
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  /* Basic responsiveness for the footer */
+  @media (max-width: 768px) {
+      .footer-columns {
+          grid-template-columns: 1fr; /* Stack columns on small screens */
+          text-align: center; /* Center text in columns */
+      }
+  
+      .newsletter-form {
+          flex-direction: column; /* Stack input and button on small screens */
+          max-width: 300px; /* Limit width of stacked form */
+          margin: 0 auto; /* Center the form */
+      }
+       .newsletter-form button {
+           width: 100%; /* Full width button */
+       }
+  }

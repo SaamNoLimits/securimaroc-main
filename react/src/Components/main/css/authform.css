@@ -1,0 +1,84 @@
+/* Apply to a container wrapping the form, e.g., .auth-form-container */
+.auth-form-container {
+    width: 100%; /* Take full width of parent (GuestLayout main) */
+    max-width: 400px; /* Max width for the form */
+    margin: 0 auto; /* Center the form container */
+    background-color: #2a2a3e; /* Card background */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.auth-form-container h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.auth-form .form-group {
+  margin-bottom: 1.2rem;
+  text-align: left; /* Align labels and inputs to the left */
+}
+
+.auth-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #ddd;
+  font-size: 0.9rem;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #1a1a2e; /* Input background */
+  color: white;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.auth-form input::placeholder {
+    color: #bbb;
+}
+
+.auth-form .submit-button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1.5rem; /* Space above the button */
+}
+
+.auth-form .submit-button:hover {
+  background-color: #0056b3;
+}
+
+.auth-link {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.auth-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: text-decoration 0.3s ease;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}

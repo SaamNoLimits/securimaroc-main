@@ -1,0 +1,44 @@
+/* Styles for the container of the hero text content */
+.hero-content-sub {
+    /*
+      These styles relate to the text and elements *within* the overlay.
+      Positioning (centering) of this block on top of the image
+      is typically handled by the parent .hero-overlay or .hero-section styles.
+    */
+    max-width: 800px; /* Limit the width of the text block */
+    padding: 0 1rem; /* Add horizontal padding */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+  }
+  
+  .hero-content-sub .hero-tag {
+      background-color: rgba(0, 123, 255, 0.7); /* Background for the tag */
+      color: white;
+      padding: 0.3rem 0.8rem;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      display: inline-block; /* Make tag fit its content */
+  }
+  
+  .hero-content-sub h1 {
+    font-size: 2.8rem; /* Size for the main title */
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+  /* Add styles for description paragraph or buttons if you include them */
+  /*
+  .hero-content-sub p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+  }
+  */
+  
+  /* Basic responsiveness */
+  @media (max-width: 768px) {
+    .hero-content-sub h1 {
+      font-size: 2rem; /* Smaller font size on mobile */
+    }
+     /* Adjust padding or other styles as needed for smaller screens */
+  }

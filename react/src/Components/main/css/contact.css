@@ -1,0 +1,125 @@
+.contact-page {
+    padding: 3rem 0;
+    background-color: #1a1a2e; /* Match your dark theme */
+    color: white;
+  }
+  
+  .contact-page .container {
+    max-width: 1000px; /* Adjust max width as needed */
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .contact-page h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+  }
+  
+  .contact-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+    color: #bbb;
+  }
+  
+  .contact-content {
+    display: flex; /* Arrange form and info side-by-side */
+    gap: 3rem; /* Space between the two columns */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  }
+  
+  .contact-form-container,
+  .contact-info {
+    flex: 1; /* Allow columns to grow and shrink */
+    min-width: 300px; /* Minimum width before wrapping */
+  }
+  
+  .contact-form-container h3,
+  .contact-info h3 {
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-form label {
+    display: block; /* Label on its own line */
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #ddd; /* Slightly lighter color for labels */
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%; /* Full width inputs */
+    padding: 0.8rem;
+    border: 1px solid #555; /* Darker border */
+    border-radius: 5px;
+    background-color: #2a2a3e; /* Input background */
+    color: white;
+    font-size: 1rem;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  .contact-form input[type="text"]::placeholder,
+  .contact-form input[type="email"]::placeholder,
+  .contact-form textarea::placeholder {
+      color: #bbb; /* Placeholder color */
+  }
+  
+  
+  .contact-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  .contact-form .submit-button {
+    display: block; /* Button on its own line */
+    width: 100%; /* Full width button */
+    padding: 1rem;
+    background-color: #007bff; /* Primary button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form .submit-button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+  }
+  
+  .contact-info p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #ccc;
+  }
+  
+  .contact-info strong {
+      color: white; /* Make contact details stand out */
+  }
+  
+  /* Basic responsiveness for the contact page */
+  @media (max-width: 768px) {
+    .contact-content {
+      flex-direction: column; /* Stack columns vertically on small screens */
+      gap: 2rem; /* Reduce gap when stacked */
+    }
+  
+    .contact-form-container,
+    .contact-info {
+        min-width: auto; /* Remove min-width restriction */
+        width: 100%; /* Make them take full width */
+    }
+  
+    .contact-form-container h3,
+    .contact-info h3 {
+        text-align: center; /* Center headings on small screens */
+    }
+  }
